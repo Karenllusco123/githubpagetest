@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Perfumes</title>
+    <style>
+        /* Estilos básicos de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #6c63ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Estilos para las tarjetas de perfume */
+        .perfume-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .perfume-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 280px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .perfume-card:hover {
+            transform: scale(1.05);
+        }
+
+        .perfume-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .perfume-info {
+            padding: 15px;
+        }
+
+        .perfume-name {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #6c63ff;
+        }
+
+        .perfume-price {
+            font-size: 1.1em;
+            color: #28a745;
+            margin-top: 5px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #6c63ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .buy-button:hover {
+            background-color: #5848c2;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #6c63ff;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bienvenidos a la Tienda de Perfumes</h1>
+        <p>Encuentra el aroma perfecto para cada ocasión</p>
+    </header>
+
+    <div class="container">
+        <div class="perfume-grid">
+            <!-- Tarjeta de perfume -->
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/280x200" alt="Perfume 1">
+                <div class="perfume-info">
+                    <h2 class="perfume-name">Perfume Elegante</h2>
+                    <p class="perfume-price">$50.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+
+            <!-- Repite esta tarjeta para otros perfumes -->
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/280x200" alt="Perfume 2">
+                <div class="perfume-info">
+                    <h2 class="perfume-name">Fragancia Suave</h2>
+                    <p class="perfume-price">$45.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+
+            <div class="perfume-card">
+                <img src="https://via.placeholder.com/280x200" alt="Perfume 3">
+                <div class="perfume-info">
+                    <h2 class="perfume-name">Aroma Fresco</h2>
+                    <p class="perfume-price">$60.00</p>
+                    <a href="#" class="buy-button">Comprar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Tienda de Perfumes. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
